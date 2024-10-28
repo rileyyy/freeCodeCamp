@@ -1,0 +1,270 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-black: #111;
+  
+  --secondary-green: #15773b;
+
+  --background-purple: #492e7f;
+
+  --type-normal: #a8a878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-electric: #f8d030;
+  --type-grass: #78c850;
+  --type-ice: #98d8d8;
+  --type-fighting: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #a8b820;
+  --type-rock: #b8a038;
+  --type-ghost: #705898;
+  --type-dragon: #7038f8;
+  --type-dark: #705848;
+  --type-steel: #b8b8d0;
+  --type-fairy: #ee99ac;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background-purple);
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 50px;
+}
+
+#logo {
+  max-width: 250px;
+  padding-bottom: 25px;
+}
+
+header,
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+main {
+  background-color: var(--background-purple);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 16px;
+  background-color: var(--main-white);
+  box-shadow: 10px 10px 0px 0px #878787bf;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#input-fields p {
+  color: var(--main-black);
+}
+
+#input-fields div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+#search {
+  border: black solid 1px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  width: 60%;
+}
+
+#search-button {
+  background-color: var(--secondary-green);
+  border: none;
+  border-radius: 8px;
+  color: var(--main-white);
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  min-width: 20%;
+}
+
+#main-info {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#pokemon-name {
+  text-transform: capitalize;
+}
+
+#name-id {
+  display: flex;
+  gap: 16px;
+}
+
+#height-weight {
+  display: flex;
+  gap: 16px;
+}
+
+#main-info h2, #main-info p {
+  color: var(--main-black);
+  font-weight: normal;
+}
+
+#images {
+  display: block;
+  width: 100%;
+}
+
+#sprite {
+  position: relative;
+  width: 180px;
+  left: calc(50% - 90px);
+}
+
+#types {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+#stats {
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  font-size: 1.2rem;
+}
+
+.stat {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: none;
+}
+
+.stat td {
+  color: var(--main-white);
+  background-color: var(--secondary-green);
+  padding: 8px;
+  text-align: center;
+  margin: 2px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.type {
+  color: black;
+  text-transform: uppercase;
+  background-color: teal;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 8px 4px 0 4px;
+}
+
+.normal {
+  background-color: var(--type-normal);
+}
+
+.fire {
+  background-color: var(--type-fire);
+}
+
+.water {
+  background-color: var(--type-water);
+}
+
+.electric {
+  background-color: var(--type-electric);
+}
+
+.grass {
+  background-color: var(--type-grass);
+}
+
+.ice {
+  background-color: var(--type-ice);
+}
+
+.fighting {
+  background-color: var(--type-fighting);
+}
+
+.poison {
+  background-color: var(--type-poison);
+}
+
+.ground {
+  background-color: var(--type-ground);
+}
+
+.flying {
+  background-color: var(--type-flying);
+}
+
+.psychic {
+  background-color: var(--type-psychic);
+}
+
+.bug {
+  background-color: var(--type-bug);
+}
+
+.rock {
+  background-color: var(--type-rock);
+}
+
+.ghost {
+  background-color: var(--type-ghost);
+}
+
+.dragon {
+  background-color: var(--type-dragon);
+}
+
+.dark {
+  background-color: var(--type-dark);
+}
+
+.steel {
+  background-color: var(--type-steel);
+}
+
+.fairy {
+  background-color: var(--type-fairy);
+}
+
+.invisible {
+  visibility: hidden;
+}

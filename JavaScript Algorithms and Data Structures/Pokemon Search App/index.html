@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Pokemon Search App</title>
+      <link rel="stylesheet" href="styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+
+   <body>
+      <header>
+         <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" id="logo">
+         <h1>Pokemon Search App</h1>
+      </header>
+      <main>
+         <div class="body">
+            <section id="input-fields">
+               <p>Enter a Pokemon's name or number to search:</p>
+               <div>
+                  <input type="text" id="search-input" required>
+                  <button id="search-button">Search</button>
+               </div>
+            </section>
+            <section id="main-info">
+               <div id="name-id">
+                  <h2 id="pokemon-name"></h2>
+                  <h2 id="pokemon-id"></h2>
+               </div>
+               <div id="height-weight">
+                  <p id="weight"></p>
+                  <p id="height"></p>
+               </div>
+            </section>
+            <section id="images">
+               <img id="sprite" class="invisible" alt="Pokemon Image">
+               <div id="types"></div>
+            </section>
+            <table id="stats">
+               <thead>
+                  <tr class="stat strong"><td>Base</td><td>Stats</td></tr>
+               </thead>
+               <tbody>
+                  <tr class="stat"><td>HP:</td><td id="hp"></td></tr>
+                  <tr class="stat"><td>Attack:</td><td id="attack"></td></tr>
+                  <tr class="stat"><td>Defense:</td><td id="defense"></td></tr>
+                  <tr class="stat"><td>Sp. Attack:</td><td id="special-attack"></td></tr>
+                  <tr class="stat"><td>Sp. Defense:</td><td id="special-defense"></td></tr>
+                  <tr class="stat"><td>Speed:</td><td id="speed"></td></tr>
+            </tbody>
+         </table>
+         </div>
+      </main>
+   </body>
+
+   <script src="script.js"></script>
+</html>
