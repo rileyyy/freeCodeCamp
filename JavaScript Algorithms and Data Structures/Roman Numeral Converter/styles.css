@@ -1,0 +1,87 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-blue: #0e2e6a;
+  --secondary-blue: #44a;
+
+  --accent-purple: #731aa7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 50px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+header,
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#logo {
+  max-width: 250px;
+  padding-bottom: 25px;
+}
+
+section {
+  width: 70vw;
+  border: var(--main-white) solid 2px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  background-color: var(--secondary-blue);
+  color: var(--main-white);
+}
+
+#entry-section {
+  gap: 10px;
+  font-size: 1.3rem;
+}
+
+#number {
+  background-color: var(--main-white);
+  border: none;
+  font-size: 1.3rem;
+}
+
+#convert-btn {
+  font-size: 1.5rem;
+  border: none;
+  margin-top: 4px;
+  padding: 4px;
+  color: var(--main-white);
+  background-color: var(--accent-purple);
+}
+
+#output {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
