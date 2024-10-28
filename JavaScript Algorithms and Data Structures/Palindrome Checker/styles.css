@@ -1,0 +1,105 @@
+:root {
+   --main-white: #f0f0f0;
+   --main-blue: #0e2e6a;
+   --main-green: #00471b;
+
+   --accent-purple: #731aa7;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+   background-color: var(--main-blue);
+   color: var(--main-white);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+   margin: 50px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+header, body, main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  gap: 25px;
+}
+
+section {
+  width: 350px;
+  border-radius: 15px;
+   padding: 15px;
+}
+
+#logo {
+  max-width: 250px;
+  padding-bottom: 25px;
+}
+
+#input-checker {
+  background-color: var(--main-white);
+  color: black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+#text-input {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--main-white);
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--accent-purple);
+}
+
+#check-btn {
+  color: var(--main-white);
+  background-color: var(--accent-purple);
+  padding: 7px 12px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+#result-phrase {
+  font-weight: bold;
+}
+
+#result {
+  font-size: 1.2em;
+}
+
+.result-phrase {
+  font-weight: bold;
+}
+
+#explanation {
+  background-color: var(--main-green);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.hidden {
+  color: var(--main-white);
+}
