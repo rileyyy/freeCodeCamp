@@ -1,0 +1,100 @@
+* {
+   box-sizing: border-box;
+   font-family: sans-serif;
+   background-color: #333;
+   color: wheat;
+   margin: 0;
+   padding: 0;
+}
+
+#main-doc {
+   display: flex;
+}
+
+.navigation-bar {
+  width: 33%;
+  color: wheat;
+  border-right: 2px solid white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 260px;
+}
+
+.navigation-bar header {
+  font-size: 1.5rem;
+  font-weight: 350;
+  padding: 20px;
+  border-bottom: 2px solid white;
+}
+
+.navigation-bar ul {
+  padding: 0;
+}
+
+.navigation-bar ul li {
+  list-style: none;
+  font-size: 1rem;
+  border-bottom: 2px solid white;
+  padding: 12px 20px;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+}
+
+.navigation-bar a:hover {
+  padding: 0 0 0 2px;
+  font-weight: 350;
+}
+
+.information-window {
+  padding: 20px 30px;
+}
+
+.section-header {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+section p {
+  padding: 12px;
+  font-weight: 200;
+  font-size: .9rem;
+}
+
+.information-window ul {
+  padding: 0 35px;
+}
+
+.information-window ul li {
+  padding: 10px 0px;
+  font-weight: 200;
+  font-size: .9rem;
+}
+
+code {
+  font-weight: 200;
+  font-family: times-new-roman;
+  white-space: nowrap;
+  border: 1px double white;
+  margin: 20px;
+  padding: 5px;
+}
+
+/* Media query for collapsing the navbar */
+@media (max-width: 750px) {
+  .navigation-bar {
+    width: 0;
+    min-width: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .navigation-bar * {
+    display: none;
+    border: none;
+  }
+}
