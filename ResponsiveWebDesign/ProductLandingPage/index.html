@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Product Landing Page</title>
+   <link rel="stylesheet" href="styles.css">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+   <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+         alt="a trombone logo">
+      <nav id="nav-bar">
+         <a class="nav-link" href="#features">Features</a>
+         <a class="nav-link" href="#short-film">How It Works</a>
+         <a class="nav-link" href="#varities">Pricing</a>
+      </nav>
+   </header>
+
+   <main>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" action="POST">
+         <h2>Handcrafted, home-made masaterpieces</h2>
+         <input name="email" type="email" id="email" placeholder="Enter your email address">
+         <input type="submit" id="submit" value="Get Started" />
+      </form>
+      <section id="features" class="features">
+         <div class="sales-feature">
+            <i class="fa fa-3x fa-fire"></i>
+            <div>
+               <h3>Premium Materials</h3>
+               <p>Our trombines use the shiniest brass which i ssourced locally. This will increase the longevity of
+                  your purchase.</p>
+            </div>
+         </div>
+         <div class="sales-feature">
+            <i class="fa fa-3x fa-truck"></i>
+            <div>
+               <h3>Fast Shipping</h3>
+               <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free
+                  returns if you are not satisfied.</p>
+            </div>
+         </div>
+         <div class="sales-feature">
+            <i class="fa fa-3x fa-battery-full"></i>
+            <div>
+               <h3>Quality Assurance</h3>
+               <p>For every purchase you make, we will ensure there are no damages of faults and we will check and test
+                  the ptch of your instrument.</p>
+            </div>
+         </div>
+      </section>
+
+      <section id="short-film" class="short-film">
+         <iframe id="video" height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+            allowfullscreen=""></iframe>
+      </section>
+
+      <section id="varities">
+         <div class="variety">
+            <h3 class="variety-title">Tenor Trombone</h3>
+            <p class="price">$600</p>
+            <p class="description">A high-quality, gold lacquered brass tenor trombone. Suitable for beginners and
+               professionals.</p>
+            <button class="select">Select</button>
+         </div>
+         <div class="variety">
+            <h3 class="variety-title">Bass Trombone</h3>
+            <p class="price">$900</p>
+            <p class="description">A low-quality, gold lacquered brass tenor trombone. Suitable only for Meghan Trainor.
+            </p>
+            <button class="select">Select</button>
+         </div>
+         <div class="variety">
+            <h3 class="variety-title">Valve Trombone</h3>
+            <p class="price">$1200</p>
+            <p class="description">The highest quality trombone money can buy, because its actually a trumpet, which is
+               far superior.</p>
+            <button class="select">Select</button>
+         </div>
+      </section>
+   </main>
+
+   <footer id="footer">
+      <div class="links">
+         <a href="https://product-landing-page.freecodecamp.rocks/#">Privacy</a>
+         <a href="https://product-landing-page.freecodecamp.rocks/#">Terms</a>
+         <a href="https://product-landing-page.freecodecamp.rocks/#">Contact</a>
+      </div>
+      <p>&copy; 2021 Product Landing Page</p>
+   </footer>
+</body>
+
+</html>
